@@ -1,0 +1,42 @@
+<div id="content_spacer">
+<h2>You have <%= @cart.number_items %> items in your cart</h2>
+
+
+<table id="cart">
+	<thead>
+	<tr>
+		<th>Product name</th>
+		<th>Description</th>		
+		<th>Quantity</th>		
+		<th>Price</th>
+		<th>Total</th>
+		<th></th>		
+	</tr>
+	</thead>
+	<tbody>
+	<% @cart.cart_items.each do |ci| %>		
+	<tr>
+		<td><%= link_to ci.product.full_name, product_path(ci.product) %></td>
+		<td><%= ci.product.description %></td>
+		<td><% form_for(ci) do |f| %>
+				<%= f.text_field :quantity, :class => :num %>
+				<%= submit_tag "Update" %>
+			<% end %></td>
+		<td><%= number_to_currency(ci.product.price) %></td>
+		<td><%= number_to_currency(ci.price) %></td>
+		<td><%= link_to 'Remove from cart', ci, :confirm => 'Are you sure?', :method => :delete %></td>					
+	</tr>
+	<% end %>
+	<tr>
+		<td colspan="5">Cart total:</td>
+		<td><%= number_to_currency(@cart.total) %></td>
+	</tr>
+	</tbody>
+</table>
+
+</p>
+<p id="order_instructions">The Games People Play is currently not taking payment online. Please call the store (in Harvard Sq., Cambridge, <%= number_to_phone(@store_phone.value, :area_code => true) %>) to provide payment and shipping information. </p>
+<p>Thank you!</p>
+
+
+</div>

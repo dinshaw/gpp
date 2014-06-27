@@ -1,0 +1,25 @@
+<div id="content_sub">
+	<div id="content_spacer">
+		<h1>Editing category</h1>
+
+<%= error_messages_for :category %>
+
+<% form_for(:category, :url => admin_category_path(@category), :html => { :method => :put }) do |f| %>
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <b>Parent</b><br />
+    <%= f.select :parent_id, @categories.collect{|c| [c.name,c.id]}, :include_blank => "None..." %>
+  </p>
+
+  <p>
+    <%= submit_tag "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', admin_category_path(@category) %> |
+<%= link_to 'Back', admin_categories_path %>
+</div></div>

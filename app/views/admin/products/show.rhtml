@@ -1,0 +1,11 @@
+<div id="content_sub">
+	<div id="content_spacer">
+
+<%= render :partial => "shared/product_details", :locals => {:product => @product} %>
+
+<%= link_to 'Edit', edit_admin_product_path(@product) %> |
+<%= link_to 'Photos', admin_product_photos_path(@product) %> |
+<%= link_to "Return to #{@product.category.full_name}", category_products_path(@product.category) %>
+
+</div>
+</div>

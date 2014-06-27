@@ -1,0 +1,13 @@
+<div id="content_sub">
+	<div id="content_spacer">
+		<h2><%= link_to "Back to #{@product.name}", product_path(@product) %></h2>
+		
+		<p><%= image_tag (@photo.public_filename(:icon)) %></p>
+		
+		<p><%= image_tag (@photo.public_filename(:thumb)) %></p>
+
+		<p><%= image_tag (@photo.public_filename) %></p>
+
+		<p><%= link_to 'Edit', edit_admin_product_photo_path %></p>
+	</div>
+</div>

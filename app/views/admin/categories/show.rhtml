@@ -1,0 +1,23 @@
+<div id="content_sub">
+	<div id="content_spacer">
+
+<p>
+  <b>Name:</b>
+  <%=h @category.name %>
+</p>
+
+<p>
+  <b>Parent:</b>
+  <%=h @category.parent.name rescue "N/A (Top level)" %>
+</p>
+
+<p>
+  <b>Permalink:</b>
+  <%=h @category.permalink %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_category_path(@category) %> |
+<%= link_to 'Back', admin_categories_path %>
+
+</div></div>

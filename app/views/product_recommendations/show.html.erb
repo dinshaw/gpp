@@ -1,0 +1,21 @@
+<div id="content_sub">
+	<div id="content_spacer">
+		<p>
+  <b>Category:</b>
+  <%=h @product_recommendation.category_id %>
+</p>
+
+<p>
+  <b>Product:</b>
+  <%=h @product_recommendation.product_id %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%=h @product_recommendation.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_product_recommendation_path(@product_recommendation) %> |
+<%= link_to 'Back', product_recommendations_path %>
+</div></div>

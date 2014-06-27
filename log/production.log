@@ -1,0 +1,367 @@
+# Logfile created on Fri Jun 27 14:35:17 -0500 2014
+
+Processing PublicController#home (for 64.249.189.250 at 2014-06-27 14:35:22) [GET]
+Rendering template within layouts/gpp
+Rendering public/home
+Completed in 82ms (View: 5, DB: 10) | 200 OK [http://www.thegamespeopleplaycambridge.com/]
+
+
+Processing StylesheetsController#games_people_play to css (for 64.249.189.250 at 2014-06-27 14:35:34) [GET]
+Rendering stylesheets/games_people_play
+Completed in 80ms (View: 1, DB: 8) | 200 OK [http://www.thegamespeopleplaycambridge.com/stylesheets/games_people_play.css]
+
+
+Processing PublicController#home (for 157.55.39.33 at 2014-06-27 14:35:46) [GET]
+Rendering template within layouts/gpp
+Rendering public/home
+Completed in 27ms (View: 5, DB: 5) | 200 OK [http://thegamespeopleplaycambridge.com/]
+
+
+Processing PublicController#home (for 140.247.196.21 at 2014-06-27 14:36:09) [GET]
+Rendering template within layouts/gpp
+Rendering public/home
+Completed in 86ms (View: 6, DB: 15) | 200 OK [http://www.thegamespeopleplaycambridge.com/]
+
+
+Processing StylesheetsController#games_people_play to css (for 140.247.196.21 at 2014-06-27 14:36:09) [GET]
+Rendering stylesheets/games_people_play
+Completed in 23ms (View: 1, DB: 4) | 200 OK [http://www.thegamespeopleplaycambridge.com/stylesheets/games_people_play.css]
+
+
+Processing PublicController#home (for 180.76.5.94 at 2014-06-27 14:36:23) [GET]
+Rendering template within layouts/gpp
+Rendering public/home
+Completed in 24ms (View: 4, DB: 5) | 200 OK [http://www.thegamespeopleplaycambridge.com/]
+
+
+Processing PublicController#home (for 193.150.120.14 at 2014-06-27 14:37:24) [GET]
+Rendering template within layouts/gpp
+Rendering public/home
+Completed in 121ms (View: 7, DB: 35) | 200 OK [http://www.thegamespeopleplaycambridge.com/]
+
+
+Processing PublicController#home (for 193.150.120.14 at 2014-06-27 14:37:24) [GET]
+Rendering template within layouts/gpp
+Rendering public/home
+Completed in 121ms (View: 7, DB: 21) | 200 OK [http://www.thegamespeopleplaycambridge.com/]
+
+
+Processing PublicController#home (for 193.150.120.14 at 2014-06-27 14:37:24) [GET]
+Rendering template within layouts/gpp
+Rendering public/home
+Completed in 24ms (View: 4, DB: 5) | 200 OK [http://www.thegamespeopleplaycambridge.com/]
+
+
+Processing PublicController#home (for 193.150.120.14 at 2014-06-27 14:37:25) [GET]
+Rendering template within layouts/gpp
+Rendering public/home
+Completed in 22ms (View: 4, DB: 3) | 200 OK [http://www.thegamespeopleplaycambridge.com/]
+
+
+Processing PublicController#home (for 193.150.120.14 at 2014-06-27 14:37:25) [GET]
+Rendering template within layouts/gpp
+Rendering public/home
+Completed in 23ms (View: 4, DB: 4) | 200 OK [http://www.thegamespeopleplaycambridge.com/]
+
+
+Processing PublicController#home (for 193.150.120.14 at 2014-06-27 14:37:25) [GET]
+Rendering template within layouts/gpp
+Rendering public/home
+Completed in 77ms (View: 6, DB: 10) | 200 OK [http://www.thegamespeopleplaycambridge.com/]
+
+
+Processing PublicController#home (for 121.205.245.10 at 2014-06-27 14:39:27) [GET]
+Rendering template within layouts/gpp
+Rendering public/home
+Completed in 78ms (View: 6, DB: 11) | 200 OK [http://www.thegamespeopleplaycambridge.com/]
+
+
+Processing PublicController#home (for 54.229.223.251 at 2014-06-27 14:42:23) [GET]
+Rendering template within layouts/gpp
+Rendering public/home
+Completed in 90ms (View: 6, DB: 11) | 200 OK [http://thegamespeopleplaycambridge.com/]
+
+
+Processing CartsController#show (for 208.115.111.74 at 2014-06-27 14:43:41) [GET]
+  Parameters: {"id"=>"1733081"}
+Redirected to controllerproductsactionindex
+Completed in 78ms (DB: 16) | 302 Found [http://thegamespeopleplaycambridge.com/carts/1733081]
+
+
+Processing CartsController#show (for 208.115.111.74 at 2014-06-27 14:43:41) [GET]
+  Parameters: {"id"=>"1734217"}
+Redirected to controllerproductsactionindex
+Completed in 29ms (DB: 10) | 302 Found [http://thegamespeopleplaycambridge.com/carts/1734217]
+
+
+Processing CartsController#show (for 208.115.111.74 at 2014-06-27 14:43:42) [GET]
+  Parameters: {"id"=>"1734841"}
+Redirected to controllerproductsactionindex
+Completed in 26ms (DB: 9) | 302 Found [http://thegamespeopleplaycambridge.com/carts/1734841]
+
+
+Processing CartsController#show (for 208.115.111.74 at 2014-06-27 14:43:44) [GET]
+  Parameters: {"id"=>"1742313"}
+Redirected to controllerproductsactionindex
+Completed in 25ms (DB: 9) | 302 Found [http://thegamespeopleplaycambridge.com/carts/1742313]
+
+
+Processing CartsController#show (for 208.115.111.74 at 2014-06-27 14:43:44) [GET]
+  Parameters: {"id"=>"1752176"}
+Redirected to controllerproductsactionindex
+Completed in 31ms (DB: 14) | 302 Found [http://thegamespeopleplaycambridge.com/carts/1752176]
+
+
+Processing CartsController#show (for 208.115.111.74 at 2014-06-27 14:43:45) [GET]
+  Parameters: {"id"=>"1763592"}
+Redirected to controllerproductsactionindex
+Completed in 22ms (DB: 6) | 302 Found [http://thegamespeopleplaycambridge.com/carts/1763592]
+
+
+Processing CartsController#show (for 208.115.111.74 at 2014-06-27 14:43:45) [GET]
+  Parameters: {"id"=>"1764667"}
+Redirected to controllerproductsactionindex
+Completed in 128ms (DB: 112) | 302 Found [http://thegamespeopleplaycambridge.com/carts/1764667]
+
+
+Processing CartsController#show (for 208.115.111.74 at 2014-06-27 14:43:46) [GET]
+  Parameters: {"id"=>"1767333"}
+Redirected to controllerproductsactionindex
+Completed in 27ms (DB: 11) | 302 Found [http://thegamespeopleplaycambridge.com/carts/1767333]
+
+
+Processing ProductsController#show (for 208.115.111.74 at 2014-06-27 14:43:47) [GET]
+  Parameters: {"id"=>"1498", "category_id"=>"1-board_games"}
+Rendering template within layouts/gpp
+Rendering products/show
+Completed in 189ms (View: 102, DB: 12) | 200 OK [http://thegamespeopleplaycambridge.com/categories/1-board_games/products/1498]
+
+
+Processing ProductsController#show (for 208.115.111.74 at 2014-06-27 14:43:47) [GET]
+  Parameters: {"id"=>"1696", "category_id"=>"1-board_games"}
+Rendering template within layouts/gpp
+Rendering products/show
+Completed in 34ms (View: 7, DB: 11) | 200 OK [http://thegamespeopleplaycambridge.com/categories/1-board_games/products/1696]
+
+
+Processing ProductsController#show (for 208.115.111.74 at 2014-06-27 14:43:48) [GET]
+  Parameters: {"id"=>"1970", "category_id"=>"1-board_games"}
+Rendering template within layouts/gpp
+Rendering products/show
+Completed in 31ms (View: 7, DB: 8) | 200 OK [http://thegamespeopleplaycambridge.com/categories/1-board_games/products/1970]
+
+
+Processing ProductsController#show (for 208.115.111.74 at 2014-06-27 14:43:48) [GET]
+  Parameters: {"id"=>"1981", "category_id"=>"1-board_games"}
+Rendering template within layouts/gpp
+Rendering products/show
+Completed in 62ms (View: 7, DB: 39) | 200 OK [http://thegamespeopleplaycambridge.com/categories/1-board_games/products/1981]
+
+
+Processing ProductsController#show (for 208.115.111.74 at 2014-06-27 14:43:49) [GET]
+  Parameters: {"id"=>"2233", "category_id"=>"1-board_games"}
+Rendering template within layouts/gpp
+Rendering products/show
+Completed in 44ms (View: 6, DB: 22) | 200 OK [http://thegamespeopleplaycambridge.com/categories/1-board_games/products/2233]
+
+
+Processing ProductsController#show (for 208.115.111.74 at 2014-06-27 14:43:49) [GET]
+  Parameters: {"id"=>"2194", "category_id"=>"13-chess"}
+Rendering template within layouts/gpp
+Rendering products/show
+Completed in 37ms (View: 7, DB: 13) | 200 OK [http://thegamespeopleplaycambridge.com/categories/13-chess/products/2194]
+
+
+Processing ProductsController#show (for 208.115.111.74 at 2014-06-27 14:43:50) [GET]
+  Parameters: {"id"=>"1346", "category_id"=>"17-why_were_special"}
+Rendering template within layouts/gpp
+Rendering products/show
+Completed in 88ms (View: 7, DB: 12) | 200 OK [http://thegamespeopleplaycambridge.com/categories/17-why_were_special/products/1346]
+
+
+Processing ProductsController#show (for 208.115.111.74 at 2014-06-27 14:43:50) [GET]
+  Parameters: {"id"=>"1120", "category_id"=>"19-party_games"}
+Rendering template within layouts/gpp
+Rendering products/show
+Completed in 41ms (View: 8, DB: 13) | 200 OK [http://thegamespeopleplaycambridge.com/categories/19-party_games/products/1120]
+
+
+Processing ProductsController#show (for 208.115.111.74 at 2014-06-27 14:43:51) [GET]
+  Parameters: {"id"=>"1245", "category_id"=>"20-kids_games"}
+Rendering template within layouts/gpp
+Rendering products/show
+Completed in 54ms (View: 14, DB: 10) | 200 OK [http://thegamespeopleplaycambridge.com/categories/20-kids_games/products/1245]
+
+
+Processing ProductsController#show (for 208.115.111.74 at 2014-06-27 14:43:51) [GET]
+  Parameters: {"id"=>"1442", "category_id"=>"22-cribbage"}
+Rendering template within layouts/gpp
+Rendering products/show
+Completed in 57ms (View: 7, DB: 32) | 200 OK [http://thegamespeopleplaycambridge.com/categories/22-cribbage/products/1442]
+
+
+Processing CartsController#show (for 208.115.111.74 at 2014-06-27 14:43:52) [GET]
+  Parameters: {"id"=>"1763565"}
+Redirected to controllerproductsactionindex
+Completed in 24ms (DB: 8) | 302 Found [http://www.thegamespeopleplaycambridge.com/carts/1763565]
+
+
+Processing ProductsController#show (for 208.115.111.74 at 2014-06-27 14:43:52) [GET]
+  Parameters: {"id"=>"333", "category_id"=>"1-board_games"}
+Rendering template within layouts/gpp
+Rendering products/show
+Completed in 33ms (View: 7, DB: 11) | 200 OK [http://www.thegamespeopleplaycambridge.com/categories/1-board_games/products/333]
+
+
+Processing ProductsController#show (for 208.115.111.74 at 2014-06-27 14:43:53) [GET]
+  Parameters: {"id"=>"1368", "category_id"=>"11-backgammon"}
+Rendering template within layouts/gpp
+Rendering products/show
+Completed in 36ms (View: 7, DB: 13) | 200 OK [http://www.thegamespeopleplaycambridge.com/categories/11-backgammon/products/1368]
+
+
+Processing PublicController#home (for 54.229.223.251 at 2014-06-27 14:51:43) [GET]
+Rendering template within layouts/gpp
+Rendering public/home
+Completed in 101ms (View: 6, DB: 28) | 200 OK [http://thegamespeopleplaycambridge.com/]
+
+
+Processing PublicController#home (for 173.48.159.138 at 2014-06-27 14:54:45) [GET]
+Rendering template within layouts/gpp
+Rendering public/home
+Completed in 84ms (View: 6, DB: 12) | 200 OK [http://www.thegamespeopleplaycambridge.com/]
+
+
+Processing StylesheetsController#games_people_play to css (for 173.48.159.138 at 2014-06-27 14:54:46) [GET]
+Rendering stylesheets/games_people_play
+Completed in 24ms (View: 1, DB: 6) | 200 OK [http://www.thegamespeopleplaycambridge.com/stylesheets/games_people_play.css]
+
+
+Processing CartsController#show (for 183.60.212.139 at 2014-06-27 14:55:02) [GET]
+  Parameters: {"id"=>"1775280"}
+Redirected to controllerproductsactionindex
+Completed in 31ms (DB: 10) | 302 Found [http://www.thegamespeopleplaycambridge.com/carts/1775280]
+
+
+Processing ProductsController#index (for 173.48.159.138 at 2014-06-27 14:56:49) [GET]
+  Parameters: {"category_id"=>"17-why_were_special"}
+Rendering template within layouts/gpp
+Rendering products/index
+Completed in 223ms (View: 116, DB: 22) | 200 OK [http://www.thegamespeopleplaycambridge.com/categories/17-why_were_special/products]
+
+
+Processing StylesheetsController#games_people_play to css (for 173.48.159.138 at 2014-06-27 14:56:50) [GET]
+Rendering stylesheets/games_people_play
+Completed in 25ms (View: 1, DB: 7) | 200 OK [http://www.thegamespeopleplaycambridge.com/stylesheets/games_people_play.css]
+
+
+Processing ProductsController#show (for 157.55.39.166 at 2014-06-27 14:57:04) [GET]
+  Parameters: {"category_id"=>"1-board_games", "id"=>"1740"}
+Rendering template within layouts/gpp
+Rendering products/show
+Completed in 152ms (View: 81, DB: 53) | 200 OK [http://www.thegamespeopleplaycambridge.com/categories/1-board_games/products/1740]
+
+
+Processing ProductsController#show (for 157.55.39.166 at 2014-06-27 14:57:04) [GET]
+  Parameters: {"category_id"=>"20-kids_games", "id"=>"2025"}
+Rendering template within layouts/gpp
+Rendering products/show
+Completed in 35ms (View: 7, DB: 11) | 200 OK [http://www.thegamespeopleplaycambridge.com/categories/20-kids_games/products/2025]
+
+
+Processing ProductsController#show (for 173.48.159.138 at 2014-06-27 14:57:05) [GET]
+  Parameters: {"category_id"=>"17-why_were_special", "id"=>"1330"}
+Rendering template within layouts/gpp
+Rendering products/show
+Completed in 109ms (View: 84, DB: 10) | 200 OK [http://www.thegamespeopleplaycambridge.com/categories/17-why_were_special/products/1330]
+
+
+Processing StylesheetsController#games_people_play to css (for 173.48.159.138 at 2014-06-27 14:57:05) [GET]
+Rendering stylesheets/games_people_play
+Completed in 74ms (View: 1, DB: 8) | 200 OK [http://www.thegamespeopleplaycambridge.com/stylesheets/games_people_play.css]
+
+
+Processing ProductsController#show (for 173.48.159.138 at 2014-06-27 14:57:11) [GET]
+  Parameters: {"category_id"=>"17-why_were_special", "id"=>"1331"}
+Rendering template within layouts/gpp
+Rendering products/show
+Completed in 48ms (View: 23, DB: 8) | 200 OK [http://www.thegamespeopleplaycambridge.com/categories/17-why_were_special/products/1331]
+
+
+Processing StylesheetsController#games_people_play to css (for 173.48.159.138 at 2014-06-27 14:57:11) [GET]
+Rendering stylesheets/games_people_play
+Completed in 22ms (View: 1, DB: 6) | 200 OK [http://www.thegamespeopleplaycambridge.com/stylesheets/games_people_play.css]
+
+
+Processing ProductsController#show (for 173.48.159.138 at 2014-06-27 14:57:23) [GET]
+  Parameters: {"category_id"=>"17-why_were_special", "id"=>"1347"}
+Rendering template within layouts/gpp
+Rendering products/show
+Completed in 111ms (View: 85, DB: 9) | 200 OK [http://www.thegamespeopleplaycambridge.com/categories/17-why_were_special/products/1347]
+
+
+Processing StylesheetsController#games_people_play to css (for 173.48.159.138 at 2014-06-27 14:57:24) [GET]
+Rendering stylesheets/games_people_play
+Completed in 22ms (View: 1, DB: 6) | 200 OK [http://www.thegamespeopleplaycambridge.com/stylesheets/games_people_play.css]
+
+
+Processing ProductsController#index (for 66.249.65.197 at 2014-06-27 14:58:18) [GET]
+  Parameters: {"page"=>"26", "category_id"=>"1-board_games"}
+Rendering template within layouts/gpp
+Rendering products/index
+Completed in 148ms (View: 25, DB: 40) | 200 OK [http://www.thegamespeopleplaycambridge.com/categories/1-board_games/products?page=26]
+
+
+Processing PublicController#home (for 54.229.223.251 at 2014-06-27 15:00:13) [GET]
+Rendering template within layouts/gpp
+Rendering public/home
+Completed in 241ms (View: 6, DB: 144) | 200 OK [http://thegamespeopleplaycambridge.com/]
+
+
+Processing PublicController#home (for 46.119.115.144 at 2014-06-27 15:02:42) [GET]
+Rendering template within layouts/gpp
+Rendering public/home
+Completed in 87ms (View: 5, DB: 11) | 200 OK [http://www.thegamespeopleplaycambridge.com/]
+
+
+Processing PublicController#home (for 46.119.115.144 at 2014-06-27 15:02:43) [GET]
+Rendering template within layouts/gpp
+Rendering public/home
+Completed in 26ms (View: 4, DB: 5) | 200 OK [http://www.thegamespeopleplaycambridge.com/]
+
+
+Processing PublicController#home (for 46.119.115.144 at 2014-06-27 15:02:43) [GET]
+Rendering template within layouts/gpp
+Rendering public/home
+Completed in 29ms (View: 4, DB: 8) | 200 OK [http://www.thegamespeopleplaycambridge.com/]
+
+
+Processing PublicController#home (for 46.119.115.144 at 2014-06-27 15:02:43) [GET]
+Rendering template within layouts/gpp
+Rendering public/home
+Completed in 23ms (View: 4, DB: 4) | 200 OK [http://www.thegamespeopleplaycambridge.com/]
+
+
+Processing PublicController#home (for 46.119.115.144 at 2014-06-27 15:02:44) [GET]
+Rendering template within layouts/gpp
+Rendering public/home
+Completed in 23ms (View: 4, DB: 4) | 200 OK [http://www.thegamespeopleplaycambridge.com/]
+
+
+Processing PublicController#home (for 46.119.115.144 at 2014-06-27 15:02:44) [GET]
+Rendering template within layouts/gpp
+Rendering public/home
+Completed in 84ms (View: 8, DB: 9) | 200 OK [http://www.thegamespeopleplaycambridge.com/]
+
+
+Processing ProductsController#index (for 66.249.65.197 at 2014-06-27 15:05:20) [GET]
+  Parameters: {"category_id"=>"1-board_games"}
+Rendering template within layouts/gpp
+Rendering products/index
+Completed in 253ms (View: 153, DB: 20) | 200 OK [http://www.thegamespeopleplaycambridge.com/categories/1-board_games/products]
+
+
+Processing PublicController#home (for 54.229.223.251 at 2014-06-27 15:09:13) [GET]
+Rendering template within layouts/gpp
+Rendering public/home
+Completed in 82ms (View: 6, DB: 11) | 200 OK [http://thegamespeopleplaycambridge.com/]

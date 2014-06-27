@@ -1,0 +1,41 @@
+<div id="content_sub">
+	<div id="content_spacer">
+		
+<%= error_messages_for :product %>
+
+<% form_for([:admin,@product] ) do |f| %>
+	<p>
+	  <b>Category</b><br />
+	  <%= f.select :category_id, Category.find(:all).collect{|c| [c.full_name,c.id]} %>
+	</p>
+
+
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <b>Sub name</b><br />
+    <%= f.text_field :sub_name %>
+  </p>
+
+  <p>
+    <b>Description</b><br />
+    <%= f.text_area :description %>
+  </p>
+
+  <p>
+    <b>Price</b><br />
+    <%= f.text_field :price %>
+  </p>
+
+  <p>
+    <%= submit_tag "Update" %>
+  </p>
+<% end %>
+
+<p><%= link_to 'Show', product_path(@product) %> | <%= link_to 'Photos', admin_product_photos_path(@product) %> | <%= link_to "Return to #{@product.category.full_name}", category_products_path(@product.category) %></p>
+
+
+</div></div>

@@ -1,0 +1,13 @@
+<ul id="nav_sub">
+	<% if !@cart.nil? %>
+	<li id="checkout"><%= link_to("Check out (#{@cart.number_items} items)", cart_path(@cart))  %></a></li>
+	<% end %>
+	<% if logged_in? %>
+		<li id="logout"><%= link_to "Logout", logout_path %></li>
+		<%= render :partial => "shared/nav_admin" if @current_user.has_role?("admin") %>
+	<% else %>
+		<li id="login"><%= link_to "Login", login_path %></li>
+	<% end %>
+
+	<li id="contact"><a href="">Contact us</a></li>
+</ul>

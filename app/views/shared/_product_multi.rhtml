@@ -1,0 +1,15 @@
+<div class="product_multi <%= cycle "even", "odd" %>">
+
+		<h3><%= link_to p.full_name, category_product_path(p.category, p) %></h3>
+		<p class="price"><%= number_to_currency(p.price) %></p>
+
+		<% form_for(@cart_item, cart_items_path) do |f| %>
+			<%= f.hidden_field :product_id, :value => p.id %>
+			<%= submit_tag "Add to cart" %>
+		<% end %>
+		
+		<% if logged_in? &&  @current_user.has_role?("admin") %>
+			<p><%= link_to 'Edit', edit_admin_product_path(p) %> | <%= link_to 'Delete', admin_product_path(p), :confirm => 'Are you sure?', :method => :delete %></p>
+		<% end %>
+	</ul>
+</div>

@@ -1,0 +1,237 @@
+/*-----------------------------------------------------------------------------
+The Gmae People Play Style Sheet
+
+version:   1.0
+author:    dinshaw gobhai
+email:     info@dinshawdesign.com
+website:   http://www.dinshawdesign.com/
+-----------------------------------------------------------------------------*/
+
+/* =Colors
+-----------------------------------------------------------------------------
+dark red bg - 6a2222
+tool bar yellow bg & nav text & link text - fffae6
+
+TEXT
+header - fff
+black text - 464545
+red bg accent & header text - 461616
+light red link & nav highlight- ae3939
+white text - fefefe
+
+NAV
+sub nav - 644520
+sub nav selected - 876b48
+selecteed nav top border brown = 7f5829
+selected nav bottom border = 583d1c
+*/
+
+
+/* =Layout 
+-----------------------------------------------------------------------------*/
+#container{width:898px;}
+#nav_bar{float:left;}
+/* Content float is for background */
+#content{float:left;}
+#product_listing, #content_sub{float:left;width:705px;}
+#content_spacer{margin:10px;}
+#side_bar{float:left;}
+#site_info, #paging{clear:both;}
+
+/* =General 
+-----------------------------------------------------------------------------*/
+body {background-color:#6a2222;}
+
+/* Remove padding and margin */
+* {margin: 0;padding: 0;}
+
+ul{list-style:none;}
+/* Class for clearing floats */
+.clear {clear:both;}
+
+
+/* Remove border around linked images */
+img {border: 0;}
+
+
+/* =Typography
+-----------------------------------------------------------------------------*/
+body {
+	font-size:100%;
+    font-family: "Lucida Grande", "Lucida Sans", "Trebuchet MS", Tahoma, Verdana, sans-serif;;
+    line-height:1.125em; /* 16×1.125=18 */
+}
+
+h2,h3,h3 a,h4,h5{color:<%= @dark_red %>;}
+p,li,td,th {
+    font-size:0.775em;
+}
+
+/*
+.sidenote {
+    font-size:0.75em;
+}
+*/
+
+h1, h1 a, #nav_main{font-family:"Adobe Garamond Pro",Times, serif;}
+h1 a{color: #fff;text-decoration:none;font-size:1.4em;line-height:1.4em;}
+#nav_main{font-size:1.4em;text-transform:uppercase;}
+
+h2{font-size:1em;}
+h3,h3 a{font-size:0.9em;}
+
+/* =Branding
+-----------------------------------------------------------------------------*/
+#masthead{color:white;border-bottom:20px solid #461616;padding:20px 20px 0 20px;}
+#masthead h1{color:#fff;border-bottom:1px solid #fff;}
+#masthead h1 span{font:13px "Lucida Sans";}
+#masthead p{font-size:17px;}
+
+
+/* =Headings
+-----------------------------------------------------------------------------*/
+
+#flash {background:<%= @dark_red %>;color:<%= @yellow %>;padding:3px 10px;}
+/* =Links
+-----------------------------------------------------------------------------*/
+
+a{color:#ae3939;}
+a:visited{}
+a:hover{}
+a:active{}
+
+/* =Main Nav
+-----------------------------------------------------------------------------*/
+#nav_bar{width:192px;}
+#nav_main ul{display:none;}
+#nav_main li.current_page ul{display:block;}
+
+#nav_main li a{
+	height:36px;
+	line-height:36px;
+	display:block;
+	
+	text-decoration:none;
+	color:#fffae6;
+	padding:0 10px 0 0;
+	text-align:right;
+	
+	border-bottom:1px solid black;
+	border-top:1px solid #ae3939;
+	background:url(/images/nav/spade_red.jpg) repeat-x;
+	}
+#nav_main li.current_page li a{padding:0 6px 0 0;}
+
+#nav_main li a:hover, #nav_main li.current_page a{
+	background:#644520 url(/images/nav/spade_brown.jpg) repeat-x;
+	border-top:1px solid #7f5829;
+	border-bottom:1px solid #644520;
+	}
+
+/* set the hearts to different places */
+
+<% top_level_cats.each_with_index do |c,i|
+	# reset thearray if we are out of values
+	@pos = %w(70 120 40 60 35 60 80 120 40) if i==0 || @pos.length == 0 %>
+
+	#nav_main li#cat_<%= c.id %> a{background-position:-<%= @pos.shift %>px 0;}
+<% end %>
+
+	
+/* Remove the bottom border for a selected link so that it doesn't cut the subnav */	
+#nav_main li.current_page li a:hover,
+#nav_main li.current_page li.current_page a,
+#nav_main li.current_page li a{border:none;background-image:none;}
+#nav_main li.current_page li a:hover, #nav_main li.current_page li.current_page a{background:#876b48;}
+
+/* =Sub Nav
+-----------------------------------------------------------------------------*/
+
+#nav_sub{margin:20px 0 0 20px;}
+#nav_sub a{color:#fffae6;height:20px;}
+#nav_sub li{padding:0 30px;margin:20px 0;height:20px;line-height:20px;}
+
+#nav_sub li#checkout{background:url(/images/nav/icon/icon_cart.gif) 0 50% no-repeat;}
+#nav_sub li#login,#nav_sub li#logout{background:url(/images/nav/icon/icon_key.gif) 0 50% no-repeat;}
+#nav_sub li#contact{background:url(/images/nav/icon/icon_phone.gif) 0 50% no-repeat;}
+
+/* =Tool bar & Bread Crumb Nav
+-----------------------------------------------------------------------------*/
+#tool_bar {position:relative;height: 36px;width:685px;background-color: #fffae6; padding:3px 10px;}
+#tool_bar ul li{float:left;margin-right:10px;}
+#tool_bar, #tool_bar a{font-size:13px;color:#6a2222;}
+#tool_bar #check_out_link{position:absolute; right:10px; top:3px ;}
+#tool_bar input{margin:auto;}
+
+/* =Main Content
+-----------------------------------------------------------------------------*/
+#content{background:#fff;}
+.home{background:url(/images/collage.jpg) repeat-x;}
+#content #home{height:490px;text-align:center;}
+#content #home p{text-indent:1em;}
+
+#home h2{font-size:25px;font-style:italic;margin-top:20px;}
+#home p{font-size:15px;font-weight:bold;margin:10px 0;}
+#home p span{color:<%= @dark_red %>;}
+#home li{font-weight:bold;}
+#content p{margin-bottom:10px;}
+#product_listing .products{margin:20px 0 0 20px;}
+/* #product_listing{background:#fff url(/images/content/content_grad.jpg) top right no-repeat;} */ 
+#product_listing{background-color:#fff;text-align:center;padding-bottom:20px;}
+
+.product_multi{float:left;margin:10px;width:145px;text-align:center;padding:5px;}
+
+.product_multi h3{color:#6a2222;font-weight:bold;}
+
+.odd{background-color:#eee;}
+div#product_pic{float:left;margin-right:10px; }
+div#product_pic img{border:1px solid <%= @darek_red %>;}
+.pagination{clear:both;text-align:center; padding-top:20px;}
+.pagination a{color:#6a2222;}
+
+p#add_to_cart{padding-left:1em;}
+
+/* =Secondary Content
+-----------------------------------------------------------------------------*/
+#side_bar{background:#fffae6 url(/images/content/sidebar_grad.jpg) top right no-repeat;}
+#side_bar h2{color:<%= @yellow %>;font-size:14px;font-weight:normal;text-align:center;width:190px;margin-top:20px;}
+#side_bar #pick1 h2{color:#fffae6;}
+#side_bar #pick2 h2{color:#6a2222;}
+#side_bar{}
+
+
+.product_recommendation_list{border-bottom:1px solid <%= @dark_red %>}
+/* Login */
+
+
+/* =Footer
+-----------------------------------------------------------------------------*/
+#site_info {text-align:center; color:#fffae6;padding-top:20px;}
+#site_info a{color:#fffae6;}
+#address {margin-bottom:20px;}
+
+/* =Forms
+-----------------------------------------------------------------------------*/
+a.crd, input.btn, input.text{color:#6a2222;}
+a.crd{margin:5px; padding:5px; border:1px solid <%= @dark_red %>}
+
+input.num{width:20px;}
+/* Removes fieldset borders. even on Opea 7 */
+fieldset {border: 1px solid transparent;}
+
+textarea{height:50px;}
+
+/* =Tables
+-----------------------------------------------------------------------------*/
+
+table {border-spacing: 0;border-collapse: collapse; margin:10px;}
+td,th{padding:3px;}
+td {text-align: left;font-weight: normal; }
+table#cart th,table#cart td{border:1px solid <%= @dark_red %>;}
+#cart th{background-color:<%= @yellow %>}
+/* =Misc 1
+-----------------------------------------------------------------------------*/
+#order_instructions{width:600px;text-indent:1em;}
+
+/* =Misc 2
+-----------------------------------------------------------------------------*/

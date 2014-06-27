@@ -1,0 +1,13 @@
+<div id="content_sub">
+	<div id="content_spacer">
+		<% @product_recommendations.each do |pr| %>
+		<ul class="product_recommendation_list">
+			<li><%= pr.category.full_name %></li>
+			<li><%= pr.product.full_name %></li>
+		</ul>
+		<% end %>
+		<%= link_to 'New Product Recommendation', new_product_recommendation_path %>		
+	</div>	
+</div>
+
+

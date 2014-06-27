@@ -1,0 +1,17 @@
+<h1>Editing cart</h1>
+
+<%= error_messages_for :cart %>
+
+<% form_for(@cart) do |f| %>
+  <p>
+    <b>Session</b><br />
+    <%= f.text_field :session_id %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @cart %> |
+<%= link_to 'Back', carts_path %>

@@ -1,0 +1,27 @@
+<div id="content_sub">
+	<div id="content_spacer">
+		<h2>Editing photo</h2>
+
+		<p>
+		  <%= image_tag (@photo.public_filename(:thumb)) %>
+		</p>
+
+
+<%= error_messages_for :photo %>
+
+<% form_for(@photo, :url => admin_product_photo_path(@product, @photo), :html => { :method => :put, :multipart => true  }) do |f| %>
+<p>
+  <b>Photo:</b><br />
+  <%= f.file_field :uploaded_data %>
+</p>
+
+  <p>
+    <%= f.submit "Update", :class => :crd %>
+  </p>
+<% end %>
+
+<p><%= link_to 'Show', admin_product_photo_path %> | <%= link_to 'Back', admin_product_photos_path %></p>
+
+
+</div>
+</div>

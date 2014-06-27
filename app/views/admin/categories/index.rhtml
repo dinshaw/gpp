@@ -1,0 +1,39 @@
+<div id="content_sub">
+	<div id="content_spacer">
+		<h2>Categories</h2>
+
+		<table>
+			<tr>
+				<th>Name</th>
+				<th>Parent</th>
+				<th>Position</th>
+			</tr>
+
+			<% for category in @all_categories %>
+			<tr>
+				<td><%=h category.name %></td>
+				<td><%=h category.parent.name rescue "N/A (Top level)" %></td>
+				<td><% form_for(:category, :url => admin_category_path(category), :html => { :method => :put }) do |f|%>
+					<%= f.hidden_field :move, :value => "up" %>
+					<%= submit_tag "Move Up" %>
+					<% end %>
+				</td>
+				<td><% form_for(:category, :url => admin_category_path(category), :html => { :method => :put }) do |f| %>
+					<%= f.hidden_field :move, :value => "down" %>
+					<%= submit_tag "Move Down" %>
+					<% end %>
+				</td>
+				<td><%= link_to 'Show', admin_category_path(category) %></td>
+				<td><%= link_to 'Edit', edit_admin_category_path(category) %></td>
+				<td><%= link_to 'Destroy', admin_category_path(category), :confirm => 'Are you sure?', :method => :delete %></td>
+			</tr>
+			<% end %>
+		</table>
+
+		<br />
+
+		<%= link_to 'New category', new_admin_category_path %>
+
+
+	</div>
+</div>

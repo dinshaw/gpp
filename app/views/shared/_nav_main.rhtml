@@ -1,0 +1,17 @@
+<ul id="nav_main">
+<% @categories.each do |c| %>
+	<li id="<%= "cat_#{c.id}" %>" <%= "class=\"current_page\"" if c.id == @top_cat_id %> ><%=link_to c.name, category_products_path(c) %>
+		
+		<% if c.children.length > 0 %>
+		
+			<ul id="sub_cats_for_<%= c.id %>" >
+				
+			<% c.children.each do |sub| %>
+				<li id="<%= "cat_#{sub.id}" %>" <%= "class=\"current_page\"" if sub.id == @category.id rescue "" %> ><%= link_to sub.name, category_products_path(sub) %></li>
+			<% end %>
+			
+			</ul>
+			
+		<% end %>		
+<% end %>
+</ul>

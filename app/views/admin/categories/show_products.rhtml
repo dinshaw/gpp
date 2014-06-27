@@ -1,0 +1,17 @@
+		<div id="product_listing">	
+			
+			<ul class="products">
+				
+				<% @products.each do |p| %>
+				
+				<%= render :partial => "shared/product_li", :locals => {:p => p} %>
+				
+				<% end %>
+			</ul>
+			
+			<%= will_paginate @products %>
+			
+		</div>
+
+
+

@@ -1,0 +1,25 @@
+<div id="tool_bar">
+	<ul>
+		<li><%= link_to "Home","/" %> > </li>
+		
+		<% if @category %>
+
+			<% if @category.parent %>
+				<li><%= link_to @category.parent.name, category_path(@category.parent) %> > </li>
+			<% end %>
+			<li><%= link_to @category.name, category_path(@category) %> > </li>
+			
+
+			
+		<% end %>
+		
+	</ul>
+
+	<% form_tag search_path do %>
+	<%= text_field_tag :search_term %>
+
+	<%= submit_tag 'Go!'%>
+	<% end %>
+
+	<p id="check_out_link"><%= @cart.number_items if @cart %> items in cart</p>
+</div>

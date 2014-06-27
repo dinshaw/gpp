@@ -1,0 +1,16 @@
+<h1>New cart</h1>
+
+<%= error_messages_for :cart %>
+
+<% form_for(@cart) do |f| %>
+  <p>
+    <b>Session</b><br />
+    <%= f.text_field :session_id %>
+  </p>
+
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', carts_path %>

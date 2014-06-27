@@ -1,0 +1,11 @@
+	<div id="side_bar">
+
+			<% recommendations = !@category.nil? ? @category.product_recommendations : default_product_recomendations  %>
+			<% recommendations.each_with_index do |pr,i| 
+				p = pr.product %>
+					<h2>For lovers of <%= p.category.name %> <%= p.parent.name rescue "" %>...</h2>
+					<%= render :partial => "shared/product_multi", :locals => {:p => p} %>
+					<br class="clear" />
+			<% end %>		
+		</ul>
+	</div>

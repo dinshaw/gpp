@@ -1,0 +1,24 @@
+<% if @products.length > 0 %>
+
+
+<div id="product_listing">	
+	
+		<% @products.each_with_index do |p,i| 
+			class_name = i%4==0 ? " clear" : ""%>	
+		<%= render :partial => "shared/product_multi", :locals => {:p => p, :class_name => class_name} %>
+		<% end %>
+
+
+	<%= will_paginate @products %>
+	
+</div>
+
+<% else %>
+
+<div id="content_sub">
+	<div id="content_spacer">
+		<p>Sorry, nothing under <%= @category.name %> at the moment.</p>
+	</div>
+</div>
+
+<% end %>

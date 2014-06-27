@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="application/xhtml+xml;charset=utf-8" />
+  <meta name="description" content="A Chess, Backgammon, Dominoes, Cribbage, Mah Jongg, Party, Word, Strategy, Card &amp; Sports Game &amp; Puzzel Store in Harvard Square" />
+  <meta name="keywords" content="Board games, Settlers of Catan, Ticket to Ride, Pandemic, Party games, Apple to Apples, Dixit, Wise and Otherwise, Word games, Scrabble, Bananagrams, Quiddler, Abstract Strategy, Hive, Mastermind, Quoridor, Card Games, Set, Lost Cities, Dominion, Sports Games, Stratomatic Baseball, Boules, Croquet, Mechanical Puzzles, Japanese Puzzle Boxes, Hanayama Cast Puzzles, Think Fun, Jigsaw Puzzles, Ravensburger, educa, clementoni, springbok, pomagranate, Liberty Puzzles, Michele Wilson, Chess, Staunton, Isle of Lewis, Backgammon, Dominoes, Cribbage, MahJongg, Go, Shogi, Chinese Chess, Playing Cards, Poker, Bridge, Pinochle, Canasta, Bee, Bicycle, Kem, Piatnik, Mondiano, Dal Negro, Tarot, Ravensburger, Gamewright, Think Fun, Hasbro, Pressman, Mattel, Constructions, Nnef, Piperods, Ball of Whacks, Bucky Balls" />
+  <title>The Game and Puzzle Store in Harvard Square</title>
+  <%= stylesheet_link_tag 'games_people_play' %>
+</head>
+
+<body>
+	<div id="container">
+		<div id="masthead">
+			<h1><%= link_to "The Games People Play","/" %> <span>1100 Mass Ave. Cambridge, MA</span></h1>
+			<p>Games &amp; Puzzles for adults</p>
+		</div>
+
+		<div id="nav_bar">
+			<%= render :partial => "shared/nav_main" %>
+			<%= render :partial => "shared/nav_sub" %>
+		</div>
+
+		<div id="content">
+
+			<%= render :partial => "shared/tool_bar" %>
+
+			<%= "<p id=\"flash\">#{flash[:notice]}</p>" if flash[:notice]%>
+
+			<%= yield  %>
+
+
+
+		</div>
+
+		<div id="site_info">
+			<ul id="address">
+				<li>1100 Massachusetts Ave.</li>
+				<li>Cambridge, MA 02138</li>
+				<li> <%= number_to_phone(@store_phone.value, :delimiter => " &bull; ") %></li>
+			</ul>
+
+			<p> <%= link_to "home", "/" %> | <%= link_to "contact", "/" %> | <a href="#">privacy policy</a> | <a href="#">terms of use</a> | design &amp; development by <%= link_to "dinshaw",  "http://www.dinshawdesign.com"%></a></p>
+		</div>
+
+
+	</div>
+</body>
+</html>

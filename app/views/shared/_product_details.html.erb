@@ -1,0 +1,43 @@
+<% if product.photos.length > 0 %>	
+	<div id="product_pic">
+		<%= image_tag product.photos.first.public_filename  %>
+		<div id="thumbs">
+			<% product.photos.each do |thumb| %>
+			<%= image_tag thumb.public_filename(:icon) %>
+			<% end %>
+		</div>
+	</div>
+<% else %>
+	<p class="product_pic"><%= image_tag "content/no_image_available.jpg"  %></p>
+<% end %>				
+<p>
+  <b>Name:</b>
+  <%=h product.name %>  <%=h product.sub_name %>
+</p>
+
+<% if !product.description.blank? %>
+<p>
+  <b>Description:</b>
+  <%=h product.description %>
+</p>
+<% end %>
+
+<p>
+  <b>Price:</b>
+  <%=h number_to_currency(product.price) %>
+</p>
+
+<% if logged_in? &&  @current_user.has_role?("admin") %>
+	<p><%= link_to 'Edit', edit_admin_product_path(product) %></p>
+<% end %>
+
+<p>
+<% form_for(@cart_item, cart_items_path) do |f| %>
+	<%= f.hidden_field :product_id, :value => product.id %>
+	<%= submit_tag "Add to cart", :class => :btn %>
+<% end %>
+</p>
+
+
+
+<br class="clear" />
