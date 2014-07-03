@@ -15,14 +15,13 @@
 
 			<h2>Order by Phone:</h2>
 			<h2><%= number_to_phone(@store_phone_800.value, :area_code => true) %> or <%= number_to_phone(@store_phone.value, :area_code => true) %></h2>
-			
+
 			<br />
-			<p>The store opened in harvard square, cambridge in october 1974 and represents 33 years experience in choosing and selling quality games and puzzles.</p>
-			<p>Our online-store is just getting started so only a small portion of our Game &amp; Puzzle inventory is displayed.</p>
+			<p>The store opened in harvard square, cambridge in october 1974 and represents <%= Time.now.year - 1974 %> years experience in choosing and selling quality games and puzzles.</p>
 			<p>We invite you to check back frequently as we will be adding more stock on a regular basis.</p>
 			<p>Please feel free to call us if you are looking for a specific game or puzzle!</p>
 			<p>You may use the shopping cart to keep track of items and their total cost while you are browsing our site.</p>
-			
+
 		</div>
 
 	</div>
